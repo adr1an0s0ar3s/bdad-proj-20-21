@@ -159,11 +159,11 @@ INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (4, 2, 10);
 INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (4, 3, 10);
 INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (4, 4, 10);
 INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (4, 5, 10);
-INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 1, 10);
+INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 1, 0);
 INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 2, 10);
 INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 3, 10);
-INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 4, 10);
-INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 5, 10);
+INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 4, 0);
+INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 5, 5);
 
 
 -- Encomenda
