@@ -176,4 +176,5 @@ INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPre
 -- Estado
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (1, '2020-08-08 09:00:00', 'aguarda pagamento');
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (4, '2021-02-01 20:30:00', 'aprovado');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (4, '2021-05-21 15:15:00', 'entregue');
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (5, '2020-09-21 12:45:00', 'cancelado');
