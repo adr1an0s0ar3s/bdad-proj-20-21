@@ -10,7 +10,7 @@ SELECT * FROM Encomenda;
 SELECT quantidade FROM Stock WHERE vacinaID = 1 AND centroID = 1;
 
 -- Inserção do estado "entregue" da encomenda inserida
-INSERT INTO Estado (id, encomendaID, dataAtualizacao, estado) VALUES (7, 6, '2021-05-20 20:00:00', 'entregue');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (6, '2021-05-20 20:00:00', 'entregue');
 SELECT * FROM Estado;
 
 -- Verificar se a quantidade da vacina Moderna no primeiro centro subiu 5 valores
