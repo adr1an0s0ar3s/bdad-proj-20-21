@@ -6,10 +6,10 @@
 SELECT nome
 FROM Laboratorio AS L
 WHERE NOT EXISTS(
-    SELECT Vacina.id
-    FROM Vacina
+    SELECT Virus.id
+    FROM Virus
     EXCEPT
-    SELECT DISTINCT Fabricante.vacinaID
-    FROM Laboratorio, Fabricante
+    SELECT DISTINCT virusID
+    FROM Fabricante JOIN Vacina ON Fabricante.vacinaID = Vacina.id
     WHERE L.id = Fabricante.laboratorioID
 );

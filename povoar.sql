@@ -120,6 +120,8 @@ INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES 
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (3, 'Oxford–AstraZeneca COVID-19', 48, 2, 1);
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (4, 'APR Dengue Vaccine', 1024, 4, 5);
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (5, 'APR FEUP EVax', 0, 1, 2);
+INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (6, 'Variola Vaccine', 20, 1, 3);
+INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (7, 'H1N1 Vaccine', 24, 1, 4);
 
 -- Fabricante
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (1, 1);
@@ -127,6 +129,8 @@ INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 1);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (3, 1);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (4, 1);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (5, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (6, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (7, 1);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 2);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 3);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (3, 4);
