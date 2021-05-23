@@ -175,7 +175,7 @@ INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPre
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (2, 1, 2, 20.88, 3, '2021-10-30 16:00:00');
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (3, 2, 2, 10.99, 3, '2021-11-01 19:00:00');
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista, dataEncomenda) VALUES (4, 3, 3, 10.01, 1, '2021-08-12 09:30:00', '2021-01-01 15:30:00');
-INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (5, 4, 4, 8.1, 1, '2021-05-29 11:00:00');
+INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (5, 4, 4, 8.1, 1, '2021-08-29 11:00:00');
 
 -- Estado
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (1, '2020-08-08 09:00:00', 'aguarda pagamento');
