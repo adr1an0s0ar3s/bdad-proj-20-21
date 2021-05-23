@@ -4,4 +4,5 @@
 
 -- Média de vacinas em stock por centro
 SELECT centroID, AVG(quantidade) AS avgStock
-FROM Stock GROUP BY centroID;
+FROM Stock
+GROUP BY centroID;

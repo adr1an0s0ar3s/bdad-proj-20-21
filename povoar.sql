@@ -115,7 +115,7 @@ INSERT INTO Laboratorio (id, nome) VALUES (5, 'FEUP BioTech');
 INSERT INTO Laboratorio (id, nome) VALUES (6, 'APRLabs');
 
 -- Vacina
-INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (1, 'Moderna COVID‑19 Vaccine', 72, 2, 1);
+INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (1, 'Moderna COVID‑19 Vaccine', 1072, 2, 1);
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (2, 'Comirnaty', 36, 2, 1);
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (3, 'Oxford–AstraZeneca COVID-19', 48, 2, 1);
 INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES (4, 'APR Dengue Vaccine', 1024, 4, 5);
@@ -123,6 +123,10 @@ INSERT INTO Vacina (id, nome, tempoConservacao, numeroDosagens, virusID) VALUES 
 
 -- Fabricante
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (1, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (3, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (4, 1);
+INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (5, 1);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 2);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (2, 3);
 INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (3, 4);
@@ -132,8 +136,8 @@ INSERT INTO Fabricante (vacinaID, laboratorioID) VALUES (5, 6);
 
 
 -- Contacto
-INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-04-03 12:00:00', '2021-09-18 08:00:00', 1, 1);
-INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-04-02 09:00:00', '2021-07-29 09:00:00', 1, 2);
+INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-04-03 12:00:00', '2021-05-22 08:00:00', 1, 1);
+INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-04-02 09:00:00', '2021-05-21 09:00:00', 1, 2);
 INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-03-31 10:30:00', '2021-07-20 10:30:00', 3, 2);
 INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-03-30 15:00:00', '2021-07-11 16:30:00', 8, 2);
 INSERT INTO Contacto (dataContacto, dataComparecimento, utenteID, vacinaID) VALUES ('2021-02-27 17:30:00', '2021-07-08 18:45:00', 10, 3);
@@ -170,11 +174,14 @@ INSERT INTO Stock (vacinaID, centroID, quantidade) VALUES (5, 5, 5);
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista, dataEncomenda) VALUES (1, 1, 1, 20.03, 4, '2021-09-20 10:00:00', '2020-03-10 17:00:00');
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (2, 1, 2, 20.88, 3, '2021-10-30 16:00:00');
 INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (3, 2, 2, 10.99, 3, '2021-11-01 19:00:00');
-INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista, dataEncomenda) VALUES (4, 2, 3, 10.01, 1, '2021-08-12 09:30:00', '2021-01-01 15:30:00');
-INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (5, 4, 4, 8.1, 1, '2021-09-22 11:00:00');
+INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista, dataEncomenda) VALUES (4, 3, 3, 10.01, 1, '2021-08-12 09:30:00', '2021-01-01 15:30:00');
+INSERT INTO Encomenda (id, vacinaID, centroID, custo, quantidade, dataEntregaPrevista) VALUES (5, 4, 4, 8.1, 1, '2021-05-29 11:00:00');
 
 -- Estado
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (1, '2020-08-08 09:00:00', 'aguarda pagamento');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (1, '2020-09-21 12:45:00', 'cancelado');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (2, '2021-05-22 20:30:00', 'entregue');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (3, '2021-05-21 20:30:00', 'entregue');
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (4, '2021-02-01 20:30:00', 'aprovado');
 INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (4, '2021-05-21 15:15:00', 'entregue');
-INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (5, '2020-09-21 12:45:00', 'cancelado');
+INSERT INTO Estado (encomendaID, dataAtualizacao, estado) VALUES (5, '2021-05-22 20:30:00', 'entregue');
